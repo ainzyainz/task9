@@ -5,7 +5,9 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,8 +26,7 @@ public class Address extends MultiID implements Serializable {
     @Column
     private int house;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "address_id")
-    private List<People> peopleList = new ArrayList<>();
+    @ManyToMany(mappedBy = "addresses")
+    private Set<People> peopleSet = new HashSet<>();
 
 }
