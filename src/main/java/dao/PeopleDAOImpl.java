@@ -1,7 +1,7 @@
 package dao;
 
 
-import Util.HibernateUtils;
+import util.HibernateUtils;
 import entity.People;
 
 import javax.persistence.EntityManager;

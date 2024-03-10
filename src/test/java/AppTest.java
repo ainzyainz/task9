@@ -1,4 +1,4 @@
-import Util.HibernateUtils;
+import util.HibernateUtils;
 import dao.AddressDAOImpl;
 import dao.PeopleDAOImpl;
 import entity.Address;

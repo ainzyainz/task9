@@ -1,6 +1,6 @@
 package dao;
 
-import Util.ReflectionUtils;
+import util.ReflectionUtils;
 import dao.funcInterface.MyInterfaceToDAO;
 import dao.funcInterface.UtilsInterface;
 
