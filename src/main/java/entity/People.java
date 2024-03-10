@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,4 +24,9 @@ public class People extends MultiID implements Serializable {
     private String surname;
     @Column
     private int age;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "people_address", joinColumns = {@JoinColumn(name = "person_id")},
+            inverseJoinColumns = {@JoinColumn(name = "address_id")})
+    private Set<Address> addresses = new HashSet<>();
 }
