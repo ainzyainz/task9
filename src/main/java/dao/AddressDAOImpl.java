@@ -43,7 +43,7 @@ public class AddressDAOImpl extends DAOImpl<Address> implements DAOAddress {
     }
 
     @Override
-    public void removeHouses() {
+    public void sortingHouses() {
         EntityManager entityManager = HibernateUtils.getEntityManager();
         entityManager.getTransaction().begin();
         Query query = entityManager.createNativeQuery(SELECT_QUERY, Address.class);
