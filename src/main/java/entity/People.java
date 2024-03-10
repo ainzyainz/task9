@@ -22,4 +22,8 @@ public class People extends MultiID implements Serializable {
     private String surname;
     @Column
     private int age;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "address_id")
+    private Address address;
 }
