@@ -1,6 +1,6 @@
 package dao;
 
-import Util.HibernateUtils;
+import util.HibernateUtils;
 import entity.Address;
 
 import javax.persistence.EntityManager;

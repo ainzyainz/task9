@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 import javax.persistence.Column;
 import javax.persistence.EntityManager;

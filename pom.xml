@@ -78,10 +78,10 @@
 
                 <excludes>
                     <exclude>
-                        Util/ReflectionUtils.class
+                        util/ReflectionUtils.class
                     </exclude>
                     <exclude>
-                        Util/HibernateUtils.class
+                        util/HibernateUtils.class
                     </exclude>
                     <exclude>
                         Main.class
